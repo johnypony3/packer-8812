@@ -1,0 +1,52 @@
+# Packer
+output*/
+packer_cache/
+artifacts/
+packerlog.txt
+
+# Kitchen
+chef/.kitchen/*
+
+# Vagrant
+Vagrantfile
+.vagrant/
+
+# Vim
+.*.swp
+.*.swo
+
+# Berks
+Berksfile.lock
+
+# Never save giant binary files
+*.iso
+
+# Windows
+desktop.ini
+
+# Mac
+.DS_Store
+
+# Logs
+*.log
+
+# Editors
+.vscode/
+
+*.box
+localdev/
+data_bags/
+artifactsvirtualbox/*
+.kitchen
+*.tar.gz
+
+# Cookbooks to be versioned
+chef/cookbooks/*
+!chef/cookbooks/debian_factory
+!chef/cookbooks/redhat_factory
+!chef/cookbooks/rubygems
+!chef/cookbooks/windows
+!chef/cookbooks/windows_factory
+
+# Do not version any inspec profiles
+inspec_profiles/

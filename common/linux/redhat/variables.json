@@ -1,0 +1,4 @@
+{
+  "rhel_7_skip_check_cmd": "",
+  "scripts_path": "common/linux/redhat/scripts"
+}

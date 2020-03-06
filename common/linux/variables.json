@@ -1,0 +1,11 @@
+{
+  "floppy_drive": "hd:fd0:",
+  "shutdown_command": "sudo shutdown -P now",
+  "chef_run_list": "redhat_factory::default",
+  "virtualbox_guest_os_type": "RedHat_64",
+  "box_basepath": "rhel",
+  "pkgs_path": "common/linux/redhat/{{ user `env_os_version` }}/pkgs",
+  "kickstart_path": "common/linux/redhat/{{ user `env_os_version` }}/ks.cfg",
+  "http_directory": "common/linux/redhat/{{ user `env_os_version` }}",
+  "vmware_guest_os_type": "{{ user `env_os` }}{{ user `env_os_version` }}-64"
+}

@@ -1,0 +1,9 @@
+{
+  "chef_run_list": "role[enterprise_db]",
+  "cpus": "3",
+  "memory": "6144",
+  "harddisk2_size": "51200",
+  "harddisk3_size": "1024",
+  "ssh_password": "vagrant",
+  "ssh_username": "vagrant"
+}

@@ -1,0 +1,31 @@
+{
+  "vsphere_password": "{{ user `env_vsphere_sa_password` }}",
+  "vsphere_username": "{{ user `env_vsphere_sa_username` }}",
+  "vsphere_datacenter": "0319",
+  "vsphere_disk_mode": "thick",
+  "vsphere_insecure": "true",
+  "vsphere_folder": "/Templates/RFDS_Packer_Lunchbox",
+
+  "vsphere_cluster_nonprod_oracle": "cl0319ora05t003",
+  "vsphere_cluster_nonprod": "cl0319lint006_deploy",
+  "vsphere_cluster_prod_oracle": "cl0319orap001_deploy",
+  "vsphere_cluster_prod": "cl0319linp004_deploy",
+
+  "vsphere_datastore_nonprod_oracle": "ds1835ora08t002_w001",
+  "vsphere_datastore_nonprod": "ds0319lint006_s001",
+  "vsphere_datastore_prod_oracle": "dsgps07orap001_deploy",
+  "vsphere_datastore_prod": "dsgps09linp004_deploy",
+
+  "vsphere_host_nonprod": "319nonprodvcenter.nordstrom.net",
+  "vsphere_host_prod": "319prodvcenter.nordstrom.net",
+
+  "vsphere_prepend_nonprod_oracle": "rfds-nonprod-oracle",
+  "vsphere_prepend_nonprod": "rfds-nonprod",
+  "vsphere_prepend_prod_oracle": "rfds-prod-oracle",
+  "vsphere_prepend_prod": "rfds-prod",
+
+  "vsphere_resource_pool_nonprod_oracle": "rp0319ora05t003",
+  "vsphere_resource_pool_nonprod": "rp0319lint006",
+  "vsphere_resource_pool_prod_oracle": "oracle"
+
+}
